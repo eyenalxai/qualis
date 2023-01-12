@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .bg-style {
+        @apply bg-slate-100 dark:bg-slate-800;
+    }
+
+    body {
+        @apply font-mono bg-style touch-none;
+    }
+}
+
+@layer components {
+    .button-height {
+        @apply h-8;
+    }
+
+    .button-height-sm {
+        @apply h-6;
+    }
+
+    .input-height {
+        @apply button-height;
+    }
+
+    .border-style {
+        @apply border border-slate-300 dark:border-slate-700;
+    }
+
+    .text-color-style {
+        @apply text-slate-700 dark:text-slate-300;
+    }
+
+    .text-color-style-right {
+         @apply text-green-700 dark:text-green-300;
+    }
+
+    .text-color-style-wrong {
+         @apply text-red-700 dark:text-red-300;
+    }
+
+    .fill-color-style {
+        @apply fill-slate-800 dark:fill-slate-200;
+    }
+
+    .transition-style {
+        @apply transition-all duration-300 ease-in-out;
+    }
+
+    .bg-color-style {
+        @apply bg-slate-200 dark:bg-slate-700;
+    }
+
+    .bg-color-style-right {
+        @apply bg-green-200 dark:bg-green-800;
+    }
+
+    .bg-color-style-wrong {
+        @apply bg-red-200 dark:bg-red-800;
+    }
+
+    .ring-style {
+        @apply
+        disabled:border-red-300 disabled:dark:border-red-600
+        disabled:hover:ring-0 disabled:hover:ring-offset-0
+
+        outline-none
+
+        border-[0.05rem]
+        border-slate-300 dark:border-slate-600
+
+        hover:border-slate-300 dark:hover:border-slate-600
+        focus:border-slate-300 dark:focus:border-slate-600
+
+        ring-0
+        ring-offset-0
+        ring-offset-slate-100 dark:ring-offset-slate-800
+
+        hover:ring-1 hover:ring-offset-1
+        hover:ring-slate-400 dark:hover:ring-slate-600
+
+        focus:ring-1 focus:ring-offset-1
+        focus:ring-slate-400 dark:focus:ring-slate-600;
+    }
+}
