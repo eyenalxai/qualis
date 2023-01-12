@@ -52,6 +52,7 @@ export const QualitySelect = (props: QualitySelectProps) => {
           "w-28",
           "text-center",
           "py-0.5",
+          "flex",
           calculateSelectStyle(
             props.showResult,
             selectedQuality,
@@ -62,6 +63,9 @@ export const QualitySelect = (props: QualitySelectProps) => {
         value={selectedQuality()}
         onChange={(e) => setSelectedQuality(e.currentTarget.value as AudioQuality)}
       >
+        <option value={undefined} selected={true}>
+          select
+        </option>
         <For each={props.qualities}>
           {(quality) => <option value={quality}>{quality}</option>}
         </For>

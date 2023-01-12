@@ -14,6 +14,7 @@ export const Button = (props: ButtonProps) => {
       class={clsx(
         "transition-style",
         "ring-style",
+        "text-center",
         "rounded-md",
         "bg-color-style",
         "text-color-style",

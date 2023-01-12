@@ -23,12 +23,12 @@ export const Player = (props: PlayerProps) => {
             setPlaying(true)
           }}
         >
-          Play
+          play
         </Button>
       }
     >
       <Button class={clsx("w-20")} onClick={() => setPlaying(false)}>
-        Pause
+        pause
       </Button>
     </Show>
   )
